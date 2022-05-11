@@ -1,7 +1,13 @@
-<ol class="post-list">
-  {{#each posts as |post|}}
-  <li>
-    {{> post-info post }}
-  </li>
-  {{/each}}
-</ol>
+{{#each posts}}
+<div class="individualPosts">
+<h2>{{title}}</h2>
+<p>{{content}}</p>
+</div>
+{{/each}}
+
+{{#if loggedIn}}
+<textarea name="" id="" cols="30" rows="10"></textarea>
+<button id="testBtn">submit</button>
+{{/if}}
+
+<script src="javascript/test.js"></script>
